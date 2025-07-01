@@ -1,31 +1,33 @@
 public abstract class Personagem {
-    protected Integer energia;
- 
+   protected Integer energia;
 
- public Personagem(Integer energia) {
-        this.energia = energia;
-    }
+   public Personagem() {
+   }
 
- public abstract void mover();
+   public Personagem(Integer energia) {
+      this.energia = energia;
+   }
 
- public abstract void fazerSom();
+   public abstract void mover();
 
- public void dormir(){
-    System.out.println("Dormindo...");
-    energia += 10;
- }
+   public abstract void fazerSom();
 
- public Integer getEnergia() {
-    return energia;
- }
+   public void dormir() {
+      System.out.println("Dormindo...");
+      energia += 10;
+   }
 
- public abstract void comer();
+   public Integer getEnergia() {
+      return energia;
+   }
 
- public void verificarEnergia(){
-    if(energia > 5){
-        System.out.println("Personagem está descansado");
-    }else{
-        System.out.println("Personagem está cansado, procure comer ou dormir");
-    }
- }
+   public abstract void comer();
+
+   public void verificarEnergia() {
+      if (energia > 5) {
+         System.out.println("Personagem está descansado");
+      } else {
+         System.out.println("Personagem está cansado, procure comer ou dormir");
+      }
+   }
 }

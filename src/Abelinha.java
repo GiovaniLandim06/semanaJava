@@ -1,4 +1,4 @@
-public class Abelinha extends Personagem{
+public class Abelinha extends Personagem implements IArmamento{
 
     
     public Abelinha(Integer energia){
@@ -21,6 +21,10 @@ public class Abelinha extends Personagem{
     public void comer() {
       energia += 3;
       System.out.println("Comendo...");
+    }
 
+    @Override
+    public void atacar(){
+        System.out.println("A abelinha ataca com uma lança");
     }
 }

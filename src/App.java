@@ -1,10 +1,16 @@
 import java.util.Scanner;
+import javax.swing.JFrame;
+
+import br.com.jkalango.view.JIntro;
+import br.com.jkalango.view.JSplash;
 
 public class App {
     public static void main(String[] args) throws Exception {
 
         Scanner sc = new Scanner(System.in);
 
+        new JIntro();
+        
         System.out.print("Quanto de energia a Formiga terá? ");
         int energiaFormiga = sc.nextInt();
         Formiga f = new Formiga(energiaFormiga);
